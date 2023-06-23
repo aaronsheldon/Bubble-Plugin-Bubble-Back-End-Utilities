@@ -1,0 +1,37 @@
+{
+    "category": "plugins",
+    "display": "Format JSON",
+    "fields": {
+        "ABG": {
+            "caption": "Raw JSON",
+            "doc": "Raw JSON string to format",
+            "editor": "DynamicValue",
+            "name": "rawjson",
+            "rank": 1,
+            "value": "text"
+        },
+        "ABH": {
+            "caption": "Indent Spaces",
+            "doc": "Number of spaces to indent the formatted JSON hierarchy",
+            "editor": "DynamicValue",
+            "name": "indentspaces",
+            "rank": 2,
+            "value": "number"
+        },
+        "ABe": {
+            "caption": "Pretty print with indents any JSON string.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "AEf": {
+            "caption": "Formatted JSON",
+            "name": "formattedjson",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

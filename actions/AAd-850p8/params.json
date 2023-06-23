@@ -1,0 +1,30 @@
+{
+    "category": "plugins",
+    "display": "Bytes to UTF8",
+    "fields": {
+        "AAc": {
+            "caption": "bytes",
+            "doc": "List of bytes to UTF8 encode",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "bytes",
+            "rank": 1,
+            "value": "number"
+        },
+        "ABY": {
+            "caption": "Note: Bubble restricts string size to be less than 6Mb. Encode a list of numbers in UTF8. Returns the UTF8 encoded string.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "AAu": {
+            "caption": "Contents",
+            "name": "contents",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

@@ -1,0 +1,31 @@
+{
+    "category": "plugins",
+    "display": "Bytes from UTF8",
+    "fields": {
+        "AAe": {
+            "caption": "Contents",
+            "doc": "Content encoded in base 64",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "contents",
+            "rank": 1,
+            "value": "text"
+        },
+        "ABZ": {
+            "caption": "Note: Bubble restricts string size to be less than 6Mb. Decode a UTF8 string into a list of number. Returns the numerical representation of the bytes as a list of numbers between 0 and 255.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "AAu": {
+            "caption": "Bytes",
+            "is_list": true,
+            "name": "bytes",
+            "rank": 0,
+            "value": "number"
+        }
+    },
+    "type": "server_side"
+}

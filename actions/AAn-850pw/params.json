@@ -1,0 +1,40 @@
+{
+    "category": "plugins",
+    "display": "Sample Dictionary",
+    "fields": {
+        "AAv": {
+            "caption": "Dictionary",
+            "doc": "The dictionary of symbols or characters to sample from.",
+            "editor": "DynamicValue",
+            "name": "dictionary",
+            "optional": true,
+            "rank": 1,
+            "value": "text"
+        },
+        "AAw": {
+            "caption": "Sample Size",
+            "doc": "The number of samples to draw with replacement from the dictionary.",
+            "editor": "DynamicValue",
+            "name": "samples",
+            "optional": true,
+            "rank": 2,
+            "value": "number"
+        },
+        "ABb": {
+            "caption": "Crytographically strong random sampling with replacement from the text, which acts as the dictionary of characters or symbols.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "AAp": {
+            "caption": "Random Samples",
+            "name": "random",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": false
+}

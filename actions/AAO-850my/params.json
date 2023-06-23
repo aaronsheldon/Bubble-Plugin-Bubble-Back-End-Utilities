@@ -1,0 +1,30 @@
+{
+    "category": "plugins",
+    "display": "UTF8 from Base 64",
+    "fields": {
+        "AAN": {
+            "caption": "Contents",
+            "doc": "Content encoded in base 64",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "contents",
+            "rank": 1,
+            "value": "text"
+        },
+        "ABV": {
+            "caption": "Note: Bubble restricts string size to be less than 6Mb. Decode a UTF8 string from base 64. Returns the decoded UTF8 string.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "AAu": {
+            "caption": "String",
+            "name": "string",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

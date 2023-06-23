@@ -1,0 +1,43 @@
+{
+    "category": "plugins",
+    "display": "JSON Path Filter",
+    "fields": {
+        "AAk": {
+            "caption": "Path Filter",
+            "default_val": "$.*",
+            "doc": "A JSON path filter to extract serialized JSON from the serialized JSON, see https://github.com/dchester/jsonpath for more details.",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "pathfilter",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAl": {
+            "caption": "Source JSON",
+            "default_val": "{}",
+            "doc": "The source serialized JSON to filter.",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "sourcejson",
+            "rank": 2,
+            "value": "text"
+        },
+        "ABa": {
+            "caption": "Filter serialized JSON using a JSON path query string. Returns the serialized extracted JSON. See https://github.com/dchester/jsonpath for more details.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "AAm": {
+            "caption": "Filtered JSON",
+            "is_list": true,
+            "name": "filteredjson",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}

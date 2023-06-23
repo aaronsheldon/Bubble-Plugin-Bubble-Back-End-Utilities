@@ -1,0 +1,22 @@
+{
+    "category": "plugins",
+    "display": "Generate UUID",
+    "fields": {
+        "ABQ": {
+            "caption": "Generate a random UUID using the native Node cryptography library.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "ABR": {
+            "caption": "UUID",
+            "name": "uuid",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": false
+}

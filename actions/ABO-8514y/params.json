@@ -1,0 +1,30 @@
+{
+    "category": "plugins",
+    "display": "Enumerate List",
+    "fields": {
+        "ABN": {
+            "caption": "List Limit",
+            "doc": "Length of the list of numbers to produce.",
+            "editor": "DynamicValue",
+            "name": "limit",
+            "rank": 1,
+            "value": "number"
+        },
+        "ABf": {
+            "caption": "Returns a list of numbers from one to the limit.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "AEi": {
+            "caption": "Numbers List",
+            "is_list": true,
+            "name": "numbers",
+            "rank": 0,
+            "value": "number"
+        }
+    },
+    "type": "server_side"
+}

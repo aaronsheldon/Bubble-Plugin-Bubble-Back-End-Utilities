@@ -1,0 +1,37 @@
+{
+    "category": "plugins",
+    "display": "Pad Number",
+    "fields": {
+        "ABq": {
+            "caption": "Number",
+            "doc": "Number to format",
+            "editor": "DynamicValue",
+            "name": "number",
+            "rank": 1,
+            "value": "number"
+        },
+        "ABr": {
+            "caption": "Leading Zeros",
+            "doc": "Zeros to prepend to number",
+            "editor": "DynamicValue",
+            "name": "leadingzeros",
+            "rank": 2,
+            "value": "number"
+        },
+        "ABs": {
+            "caption": "Pad a number with leading zeros.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "AAl": {
+            "caption": "Number",
+            "name": "number",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

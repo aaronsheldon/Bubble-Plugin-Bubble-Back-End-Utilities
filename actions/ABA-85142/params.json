@@ -1,0 +1,46 @@
+{
+    "category": "plugins",
+    "display": "Random Integer",
+    "fields": {
+        "ABC": {
+            "caption": "Samples",
+            "doc": "Samples to draw with replacement from range.",
+            "editor": "DynamicValue",
+            "name": "samples",
+            "rank": 3,
+            "value": "number"
+        },
+        "ABE": {
+            "caption": "Minimum",
+            "doc": "Lower bound of range.",
+            "editor": "DynamicValue",
+            "name": "lower",
+            "rank": 1,
+            "value": "number"
+        },
+        "ABF": {
+            "caption": "Maximum",
+            "doc": "Upper bound of range.",
+            "editor": "DynamicValue",
+            "name": "upper",
+            "rank": 2,
+            "value": "number"
+        },
+        "ABd": {
+            "caption": "Cryptographically strong random integer sampling with replacement from the range.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "ABD": {
+            "caption": "Random Samples",
+            "is_list": true,
+            "name": "samples",
+            "rank": 0,
+            "value": "number"
+        }
+    },
+    "type": "server_side"
+}

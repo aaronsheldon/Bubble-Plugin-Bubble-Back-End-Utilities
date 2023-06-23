@@ -1,0 +1,39 @@
+{
+    "category": "plugins",
+    "display": "RegEx Match All",
+    "fields": {
+        "ABm": {
+            "caption": "Search Text",
+            "doc": "The text body to search with a regular expression.",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "searchtext",
+            "rank": 1,
+            "value": "text"
+        },
+        "ABn": {
+            "caption": "Regular Expression",
+            "doc": "Case sensitive regular expression.",
+            "editor": "DynamicValue",
+            "name": "regularexpression",
+            "rank": 2,
+            "value": "text"
+        },
+        "ABp": {
+            "caption": "Return a list of all text matches to the regular expression.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "AAE": {
+            "caption": "All Matches",
+            "is_list": true,
+            "name": "allmatches",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

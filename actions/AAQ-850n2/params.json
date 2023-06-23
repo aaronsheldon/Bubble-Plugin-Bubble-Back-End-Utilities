@@ -1,0 +1,30 @@
+{
+    "category": "plugins",
+    "display": "Bytes to Base 64",
+    "fields": {
+        "AAR": {
+            "caption": "bytes",
+            "doc": "List of bytes to base 64 encode",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "bytes",
+            "rank": 1,
+            "value": "number"
+        },
+        "ABW": {
+            "caption": "Note: Bubble restricts string size to be less than 6Mb. Encode a list of numbers in base 64. Returns the base 64 encoded string.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "AAu": {
+            "caption": "Contents",
+            "name": "contents",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

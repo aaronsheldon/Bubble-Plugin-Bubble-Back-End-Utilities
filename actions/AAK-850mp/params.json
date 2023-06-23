@@ -1,0 +1,64 @@
+{
+    "category": "plugins",
+    "display": "Write from Base 64",
+    "fields": {
+        "AAF": {
+            "caption": "Home URL",
+            "doc": "Website home URL",
+            "editor": "DynamicValue",
+            "name": "homeurl",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAG": {
+            "caption": "File Name",
+            "doc": "File name to write to",
+            "editor": "DynamicValue",
+            "long_text": false,
+            "name": "filename",
+            "rank": 2,
+            "value": "text"
+        },
+        "AAH": {
+            "caption": "Contents",
+            "doc": "Base 64 contents",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "contents",
+            "rank": 3,
+            "value": "text"
+        },
+        "AAI": {
+            "caption": "Private",
+            "default_val": false,
+            "doc": "Make this file private",
+            "editor": "Checkbox",
+            "name": "private",
+            "rank": 4
+        },
+        "AAJ": {
+            "caption": "Attach to",
+            "doc": "Attach this file to",
+            "editor": "DynamicValue",
+            "name": "attachto",
+            "optional": true,
+            "rank": 5,
+            "value": "_any_thing"
+        },
+        "ABT": {
+            "caption": "Note: Bubble restricts string size to be less than 6Mb. Save any base 64 encode bytes to Bubble's Amazon S3. Returns the created file.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "AAc": {
+            "caption": "Saved File",
+            "name": "savedfile",
+            "rank": 0,
+            "value": "file"
+        }
+    },
+    "type": "server_side"
+}

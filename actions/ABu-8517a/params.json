@@ -1,0 +1,39 @@
+{
+    "category": "plugins",
+    "display": "Estimate Lines",
+    "fields": {
+        "ABv": {
+            "caption": "For a given text estimate the number of lines in the text by calculating the number of word wrapped lines between consecutive newline characters.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        },
+        "ABw": {
+            "caption": "Text",
+            "doc": "Input text to estimate number of word wrapped lines",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "text",
+            "rank": 1,
+            "value": "text"
+        },
+        "ABx": {
+            "caption": "Characters per Line",
+            "doc": "Number of characters at which a line gets word wrapped. Leave empty to count only new lines.",
+            "editor": "DynamicValue",
+            "name": "characters",
+            "optional": true,
+            "rank": 2,
+            "value": "number"
+        }
+    },
+    "return_value": {
+        "ABy": {
+            "caption": "Line Count",
+            "name": "lines",
+            "rank": 0,
+            "value": "number"
+        }
+    },
+    "type": "server_side"
+}

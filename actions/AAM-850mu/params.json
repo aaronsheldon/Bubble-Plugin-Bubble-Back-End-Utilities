@@ -1,0 +1,30 @@
+{
+    "category": "plugins",
+    "display": "UTF8 to Base 64",
+    "fields": {
+        "AAL": {
+            "caption": "String",
+            "doc": "String to encode in base 64",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "string",
+            "rank": 1,
+            "value": "text"
+        },
+        "ABU": {
+            "caption": "Note: Bubble restricts string size to be less than 6Mb. Encode any UTF8 string to a base 64. Returns a string containing the base 64 encoded string.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "AAu": {
+            "caption": "Contents",
+            "name": "contents",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

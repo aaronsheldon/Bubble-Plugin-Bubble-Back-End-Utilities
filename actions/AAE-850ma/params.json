@@ -1,0 +1,29 @@
+{
+    "category": "plugins",
+    "display": "Read to Base 64",
+    "fields": {
+        "AAD": {
+            "caption": "File URL",
+            "doc": "URL of file to retrieve base 64 from",
+            "editor": "DynamicValue",
+            "name": "fileurl",
+            "rank": 1,
+            "value": "text"
+        },
+        "ABS": {
+            "caption": "Note: Bubble restricts string size to be less than 6Mb. Read the byte contents of any URL into a base 64 encode string. Returns a string of the base 64 encoded bytes. This is the equivalent of Bubble's :encoded in base64 operator but for any URL.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "AAZ": {
+            "caption": "Contents",
+            "name": "contents",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

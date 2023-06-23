@@ -1,0 +1,49 @@
+{
+    "category": "plugins",
+    "display": "HMAC Signature",
+    "fields": {
+        "ABh": {
+            "caption": "Content",
+            "doc": "Content to be signed.",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "content",
+            "rank": 0,
+            "value": "text"
+        },
+        "ABi": {
+            "caption": "Secret Key",
+            "doc": "Shared secret key used for signing.",
+            "editor": "DynamicValue",
+            "name": "key",
+            "rank": 1,
+            "value": "text"
+        },
+        "ABj": {
+            "caption": "Encoding",
+            "doc": "Encoding of the output signature.",
+            "editor": "Dropdown",
+            "name": "encoding",
+            "options": "hex,base64",
+            "rank": 2
+        },
+        "ABk": {
+            "caption": "algorithm",
+            "doc": "Cryptographic digest to use.",
+            "editor": "Dropdown",
+            "name": "algorithm",
+            "options": "md5,sha256,sha512",
+            "rank": 3
+        }
+    },
+    "return_value": {
+        "ABl": {
+            "caption": "Digest",
+            "name": "digest",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": false
+}
