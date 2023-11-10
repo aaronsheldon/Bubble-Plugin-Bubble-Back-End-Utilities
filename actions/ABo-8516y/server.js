@@ -1,4 +1,4 @@
-function(properties, context) {
+async function(properties, context) {
 	return { 
         allmatches: Array.from(
             properties.searchstring.matchall(properties.regularexpression),

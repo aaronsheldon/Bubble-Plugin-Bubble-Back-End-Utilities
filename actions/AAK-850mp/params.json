@@ -46,7 +46,7 @@
             "value": "_any_thing"
         },
         "ABT": {
-            "caption": "Note: Bubble restricts string size to be less than 6Mb. Save any base 64 encode bytes to Bubble's Amazon S3. Returns the created file.",
+            "caption": "Note: Bubble restricts string size to be less than 6Mb. Save any base 64 encoded bytes to Bubble's Amazon S3. Returns the created file.",
             "editor": "Label",
             "name": "information",
             "rank": 0

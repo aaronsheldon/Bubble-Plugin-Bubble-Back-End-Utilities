@@ -1,30 +1,40 @@
-function(properties, context) {
+async function(properties, context) {
     
-    // Default JSON payload
-    var payload = {
+    // Ingest
+    const url = properties.homeurl + "fileupload";
+    const protocol = properties.private ? "" : "https:";
+    const payload = {
         name: properties.filename,
         contents: properties.contents
+    };
+
+    // Private and assigned
+    if (properties.private && properties.attachto) {
+        payload.private = true;
+        payload.attach_to = properties.attachto.id;
     }
 
-    // File is private and attach user specified
-    if (properties.private && properties.attachto != null) {
-       payload.private = true;
-       payload.attach_to = properties.attachto.get("_id");
-    }
-
-    // File is private default to current user
+    // Private and default
     else if (properties.private) {
         payload.private = true;
-        payload.attach_to = context.currentUser.get("_id");
+        payload.attach_to = context.currentUser.id;
     }
 
-    // Incantation to upload file
-    var postoptions = {
-        uri: properties.homeurl + "fileupload",
+    // POST options
+    const options = {
         method: "POST",
-        json: payload
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify(payload)
     };
-    
-    // Send
-    return { savedfile: context.request(postoptions).body };
+
+    // Digest
+    const response = fetch(url, options)
+    .then((response) => { return response.json(); })
+    .then((response) => { return { savedfile: protocol + response }; });
+
+    // Excrete
+    return response;
 }

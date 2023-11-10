@@ -1,4 +1,4 @@
-function(properties, context) {
+async function(properties, context) {
 	const { createHmac } = require("crypto");
     
     // Ingest

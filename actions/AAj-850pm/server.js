@@ -1,4 +1,4 @@
-function(properties, context) {
+async function(properties, context) {
 	const pathengine = require('jsonpath');
 	return {
         filteredjson: pathengine.query(

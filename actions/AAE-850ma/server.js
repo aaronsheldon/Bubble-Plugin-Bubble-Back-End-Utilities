@@ -1,16 +1,16 @@
-function(properties, context) {
+async function(properties, context) {
     
-    // Incantation to request content
-    var getoptions = {
-  		uri: properties.fileurl,
-  		method: "GET",
-  		encoding: null,
-  		headers: { "Accept": "application/octet-stream" }
-	};
-    
-    // Store the bytes
-    var filebytes = context.request(getoptions).body;
+    // Ingest
+    const options = {
+        method: "GET",
+        headers: { "Accept": "application/octet-stream" }
+    };
 
-	// Send
-    return { contents: Buffer.from(filebytes).toString("base64") };
+    // Digest
+    const response = fetch(properties.fileurl, options)
+    .then((response) => { return response.arrayBuffer(); })
+    .then((response) => { return { contents: Buffer.from(response).toString("base64") }; });
+
+    // Excrete
+    return response;
 }

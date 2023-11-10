@@ -1,4 +1,4 @@
-function(properties, context) {
+async function(properties, context) {
 	return {
         lines: properties.text ? properties
         	.text

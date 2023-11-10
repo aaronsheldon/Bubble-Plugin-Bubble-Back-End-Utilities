@@ -1,4 +1,4 @@
-function(properties, context) {
+async function(properties, context) {
 
     // Clean
     if (properties.dictionary == null) { return { random: "" }; }
