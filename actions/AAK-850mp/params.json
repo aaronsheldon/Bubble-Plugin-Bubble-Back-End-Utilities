@@ -58,6 +58,18 @@
             "name": "savedfile",
             "rank": 0,
             "value": "file"
+        },
+        "ACA": {
+            "caption": "Code",
+            "name": "code",
+            "rank": 1,
+            "value": "number"
+        },
+        "ACB": {
+            "caption": "Status",
+            "name": "status",
+            "rank": 2,
+            "value": "text"
         }
     },
     "type": "server_side"

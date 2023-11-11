@@ -32,9 +32,29 @@ async function(properties, context) {
 
     // Digest
     const response = fetch(url, options)
-    .then((response) => { return response.json(); })
-    .then((response) => { return { savedfile: protocol + response }; });
+    const file = response
+    .then((response) => { return response.ok ? response.json() : ""; })
+    .then((response) => { return response ? protocol + response : ""; });
+	const status = response
+    .then(
+        (response) => {
+        	return {
+                code: response.status,
+            	text: response.statusText
+            }
+        }
+    );
 
     // Excrete
-    return response;
+    return Promise
+    .all([status, file])
+    .then(
+    	([status, file]) => {
+        	return {
+            	savedfile: file,
+                code: status.code,
+                status: status.text
+            };
+        }
+    );
 }
